@@ -543,7 +543,7 @@ header('Content-Type: text/html; charset=utf-8');
 // Product list with image URLs
 const products = [
   { name: "WW180", img: "assets/img/variety/W180.png" },
-  { name: "WW240", img: "assets/img/variety/W240.png" },
+  { name: "WW240", img: "assets/img/variety/w240.png" },
   { name: "WW320", img: "assets/img/variety/w320.png" },
   { name: "WS", img: "assets/img/variety/ws.png" },
   { name: "LWP", img: "assets/img/variety/lwp.png" },
