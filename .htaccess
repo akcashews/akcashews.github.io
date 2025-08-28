@@ -1,0 +1,12 @@
+<IfModule mod_php.c>
+    php_flag display_errors On
+</IfModule>
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+    Header set Access-Control-Allow-Headers "Content-Type, X-Requested-With"
+</IfModule>
+RewriteEngine On
+# Let PHP scripts receive PUT/DELETE bodies
+RewriteCond %{REQUEST_METHOD} ^(PUT|DELETE|OPTIONS)$
+RewriteRule ^api/ - [E=HTTP_AUTHORIZATION:%1]

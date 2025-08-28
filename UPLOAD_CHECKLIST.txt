@@ -1,0 +1,65 @@
+INFINITYFREE UPLOAD CHECKLIST
+=============================
+
+✅ ISSUES FIXED:
+- All navigation sections now visible (removed d-none classes)
+- Added cart navigation with counter badge
+- Fixed Bootstrap JS CDN link
+- Fixed routing from #shop to #products
+- Added admin panel HTML section
+- Improved database configuration with auto-detection
+- Added proper CORS headers
+
+📁 FILES TO UPLOAD TO INFINITYFREE htdocs FOLDER:
+- index.html (main website file)
+- .htaccess (URL rewriting rules)
+- api/ folder (contains all PHP backend files)
+  - config.php
+  - db.php
+  - auth.php
+  - products.php
+  - orders.php
+- assets/ folder (contains CSS, JS, and images)
+  - css/styles.css
+  - js/app.js
+  - js/jquery-3.6.0.min.js
+  - img/ (all image files)
+- cashews_spa_schema.sql (database schema)
+
+🔧 BEFORE UPLOADING:
+1. Update api/config.php with your actual InfinityFree database details:
+   - DB_HOST (your MySQL hostname from InfinityFree)
+   - DB_NAME (your database name)
+   - DB_USER (your database username)
+   - DB_PASS (your database password)
+
+📤 UPLOAD METHODS:
+Option 1: InfinityFree File Manager
+- Login to InfinityFree control panel
+- Go to File Manager
+- Upload files to htdocs folder
+
+Option 2: FTP Client (Recommended for large uploads)
+- Use FileZilla or similar FTP client
+- Connect using FTP details from InfinityFree
+- Upload all files to htdocs folder
+
+🗄️ DATABASE SETUP:
+1. Go to MySQL Databases in InfinityFree control panel
+2. Import cashews_spa_schema.sql
+3. Verify tables are created
+
+🧪 TESTING:
+After upload, test:
+- Website loads: yoursite.infinityfree.net
+- Navigation works (Home, About, Products, FAQ, Contact, Cart)
+- Admin panel: yoursite.infinityfree.net/#admin
+- Admin login: admin@akcashews.com / Admin@123
+
+⚠️ COMMON ISSUES:
+- If upload fails: Try smaller batches or use FTP
+- If database errors: Check credentials in config.php
+- If images don't load: Verify file paths and permissions
+- If API doesn't work: Check .htaccess file uploaded
+
+✅ YOUR WEBSITE IS NOW READY FOR DEPLOYMENT!
